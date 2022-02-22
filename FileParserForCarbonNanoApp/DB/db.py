@@ -5,7 +5,8 @@ logger.basicConfig(filename="Log/appLog.log",level= logger.INFO,format="%(asctim
 class databaseOpr:
 
         def __init__(self):
-                self.client = pymongo.MongoClient("mongodb+srv://root:Welcome123@cluster0.rf9ij.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+                ""Please Provide a path mongo DB"""
+                self.client = pymongo.MongoClient("")
                 self.db = self.client["NanotubeDB"]
 
         def batchInsertIntoCarbonColl(self,dataset):
