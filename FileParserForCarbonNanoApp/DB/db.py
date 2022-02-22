@@ -5,7 +5,7 @@ logger.basicConfig(filename="Log/appLog.log",level= logger.INFO,format="%(asctim
 class databaseOpr:
 
         def __init__(self):
-                ""Please Provide a path mongo DB"""
+                """Please Provide a path mongo DB"""
                 self.client = pymongo.MongoClient("")
                 self.db = self.client["NanotubeDB"]
 
